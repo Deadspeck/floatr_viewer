@@ -2,6 +2,7 @@
         background-color: #303030;
         font-family: 'Segoe UI Light', sans-serif;
         color: whitesmoke;
+        margin: auto;
     }
 
     ::-webkit-scrollbar {
@@ -12,7 +13,7 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(5, 3fr);
+        grid-template-columns: repeat(5, 5fr);
         grid-template-rows: repeat(5, auto);
         grid-template-areas: " . . . . . " ". main main main ." ". footer footer footer  . ";
         grid-gap: 40px;
@@ -32,6 +33,7 @@
     .main {
         grid-area: main;
         padding: 20px;
+        max-width: 100%;
         background-color: rgba(32, 32, 32, 0.8);
         border: 2px solid rgba(255, 255, 255, 0.2);
     }
