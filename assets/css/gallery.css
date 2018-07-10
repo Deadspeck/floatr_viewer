@@ -5,88 +5,101 @@
         margin: auto;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
+    /*------------------------------------------------------------------------------------------------------------------------------------*/
 
-    /*The grids*/
+    /* MAIN CONTENT */
 
-    .grid-container {
-        display: grid;
-<<<<<<< HEAD
-        grid-template-columns: repeat(5, 5fr);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: " . . . . . " ". main main main ." ". footer footer footer  . ";
-=======
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: " .  " "main" "footer";
->>>>>>> origin/master
-        grid-gap: 40px;
+    .container {
         text-align: center;
-        padding: 0px 50px 20px 50px;
-    }
-
-    /*.header {
-        grid-area: header;
-        background-color: rgba(32, 32, 32, 0.8);
+        margin-left: 20vw;
+        margin-right: 20vw;
         border: 2px solid rgba(255, 255, 255, 0.2);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-    }*/
-
-    .main {
-        grid-area: main;
-        padding: 20px;
-        max-width: 100%;
-        background-color: rgba(32, 32, 32, 0.8);
-        border: 2px solid rgba(255, 255, 255, 0.2);
-    }
-
-    /*.leftsb {
-        grid-area: leftsb;
-        text-align: center;
-        font-size: 14px;
+        padding: 0px 30px 0px 30px;
         background-color: #202020;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        padding: 10px;
-    }*/
+    }
 
-    /*.rightsb {
-        grid-area: rightsb;
-        text-align: center;
-        font-size: 14px;
-        background-color: #202020;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        padding: 10px;
-    }*/
+    @media (max-width:800px) {
+        .container {
+            text-align: center;
+            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background-color: #202020;
+            padding: 0px 30px 0px 30px;
+        }
+    }
+
+    .titleimg {
+        font-size: 1.5vw;
+    }
+
+    @media (max-width:800px) {
+        .titleimg {
+            font-size: 2.5vw;
+        }
+    }
 
     .footer {
-        grid-area: footer;
         text-align: center;
-        font-size: 14px;
-        padding: 10px;
-        background-color: rgba(32, 32, 32, 0.8);
+        font-size: 1vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
         border: 2px solid rgba(255, 255, 255, 0.2);
+        background-color: #202020;
+        padding: 0px 30px 0px 30px;
     }
 
-    /*The Image*/
+    @media (max-width:800px) {
+        .footer {
+            text-align: center;
+            font-size: 1.5vw;
+            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background-color: #202020;
+            padding: 0px 30px 0px 30px;
+        }
+    }
 
-    #titlehr {
-        border-style: double;
-        border-width: 3px;
-        border-color: dimgray;
+    #user {
+        float: right;
     }
 
     #name,
     #date {
         font-size: .78vw;
         color: gray;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+
+    @media (max-width:800px) {
+        #name,
+        #date {
+            font-size: 2vw;
+            color: gray;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    /*------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /*The Image*/
+
+    #titlehr {
+        border-style: double;
+        text-align: center;
+        border-width: 3px;
+        border-color: dimgray;
+    }
+
 
     #image {
         padding: auto;
+        padding-top: 60px;
     }
 
     img {
@@ -94,6 +107,8 @@
         height: auto;
         border: double 5px #404040;
     }
+
+    /*------------------------------------------------------------------------------------------------------------------------------------*/
 
     /*Navbar*/
 
@@ -194,11 +209,9 @@
         }
     }
 
-    #user {
-        float: right;
-    }
+    /*------------------------------------------------------------------------------------------------------------------------------------*/
 
-    /* Modal (background) */
+    /* Modal */
 
     .modal {
         display: none;
