@@ -40,6 +40,24 @@
         }
     }
 
+    #name,
+    #date {
+        font-size: .78vw;
+        color: gray;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @media (max-width:800px) {
+        #name,
+        #date {
+            font-size: 2vw;
+            color: gray;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
     .footer {
         text-align: center;
         font-size: 1vw;
@@ -63,27 +81,6 @@
         }
     }
 
-    #user {
-        float: right;
-    }
-
-    #name,
-    #date {
-        font-size: .78vw;
-        color: gray;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    @media (max-width:800px) {
-        #name,
-        #date {
-            font-size: 2vw;
-            color: gray;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
 
     /*------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -207,6 +204,10 @@
             height: calc(100vh - 50px);
             overflow-y: auto;
         }
+    }
+
+    #user {
+        float: right;
     }
 
     /*------------------------------------------------------------------------------------------------------------------------------------*/
