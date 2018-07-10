@@ -253,6 +253,12 @@
         animation-duration: 0.4s
     }
 
+    @media (max-width:800px) {
+            .modal-content {
+                padding-bottom: 200px;
+            }
+        }
+
     /* Add Animation */
 
     @-webkit-keyframes animatetop {
