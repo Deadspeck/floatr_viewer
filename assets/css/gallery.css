@@ -22,11 +22,9 @@
         .container {
             text-align: center;
             margin: auto;
-            margin-left: 20px;
-            margin-right: 20px;
             border: 2px solid rgba(255, 255, 255, 0.2);
             background-color: #202020;
-            padding: 0px 30px 0px 30px;
+            padding: 0px 20px 30px 10px;
         }
     }
 
@@ -51,10 +49,10 @@
     @media (max-width:800px) {
         #name,
         #date {
-            font-size: 2vw;
+            font-size: 2.5vw;
             color: gray;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -71,16 +69,13 @@
     @media (max-width:800px) {
         .footer {
             text-align: center;
-            font-size: 1.5vw;
+            font-size: 2.5vw;
             margin: auto;
-            margin-left: 20px;
-            margin-right: 20px;
             border: 2px solid rgba(255, 255, 255, 0.2);
             background-color: #202020;
             padding: 0px 30px 0px 30px;
         }
     }
-
 
     /*------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -99,10 +94,24 @@
         padding-top: 60px;
     }
 
+    @media (max-width:800px) {
+        #image {
+            padding: auto;
+            padding-top: 25px;
+        }
+    }
+
     img {
         max-width: 100%;
         height: auto;
         border: double 5px #404040;
+    }
+
+    @media (max-width:800px) {
+        img {
+            width: 100%;
+
+        }
     }
 
     /*------------------------------------------------------------------------------------------------------------------------------------*/
@@ -243,7 +252,6 @@
         position: relative;
         background-color: #202020;
         margin: auto;
-        padding: 0;
         border: 3px solid #606060;
         width: 80%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -254,10 +262,10 @@
     }
 
     @media (max-width:800px) {
-            .modal-content {
-                padding-bottom: 200px;
-            }
+        .modal-content {
+            padding-bottom: 200px;
         }
+    }
 
     /* Add Animation */
 
